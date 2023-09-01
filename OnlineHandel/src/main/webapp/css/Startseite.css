@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+
+.navbar{
+	background-color: red;
+	padding: 40px;
+}
+#suchKnopf{
+	border-radius: 10px;
+}
+#suchFeld{
+	margin-left: 550px;
+	padding: 10px;
+	min-width: 500px;
+}
+#warenKorb{
+	margin-left: 450px;
+}
+#benutzer{
+	margin-left: 100px;
+}
+#katAuswahl{
+	margin-top: 10px;
+}
+.icons{
+	height: 50px;
+	vertical-align: -20px;
+	
+	
+}
