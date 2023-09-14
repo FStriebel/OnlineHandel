@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+h3#login{
+	font-family:Arial;
+}
+
+input{
+	font-family: Arial;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+input#button{
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
+a#link{
+	font-family: Arial;
+}

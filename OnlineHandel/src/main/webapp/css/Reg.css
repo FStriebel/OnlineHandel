@@ -1,0 +1,16 @@
+
+h3#reg{
+	font-family: Arial;
+}
+
+input{
+	font-family: Arial;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+input#button{
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
