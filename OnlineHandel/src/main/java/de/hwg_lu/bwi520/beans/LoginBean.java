@@ -11,6 +11,7 @@ public class LoginBean {
 	String userid;
 	String password;
 	boolean loggedIn;
+	String loginMsg = "";
 	
 	public LoginBean() {
 		this.setLoggedIn(false);
@@ -32,10 +33,23 @@ public class LoginBean {
 		prep.setString(1, this.userid);
 		prep.setString(2, this.password);
 		ResultSet dbRes = prep.executeQuery();
-		return dbRes.next();
+		boolean result = dbRes.next();
+		if(result == false) {
+			loginMsg = "Benutzername oder Passwort falsch";
+		}
+		return result;
+		
 	}
 	
 	
+	public String getLoginMsg() {
+		String tmp = this.loginMsg;
+		this.loginMsg = "";
+		return tmp;
+	}
+	public void setLoginMsg(String loginMsg) {
+		this.loginMsg = loginMsg;
+	}
 	
 	public String getUserid() {
 		return userid;

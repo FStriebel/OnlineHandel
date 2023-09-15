@@ -32,3 +32,7 @@ form{
     transform: translate(-50%, -40%);
    
 }
+
+p#loginMsg{
+	color: red;
+}
