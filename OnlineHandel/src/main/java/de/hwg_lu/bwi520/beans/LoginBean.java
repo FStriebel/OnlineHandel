@@ -1,10 +1,14 @@
+package de.hwg_lu.bwi520.beans;
+
 import java.sql.*;
+
+import de.hwg_lu.bwi.jdbc.PostgreSQLAccess;
 
 
 public class LoginBean {
 
 	
-	String email;
+	String userid;
 	String password;
 	boolean loggedIn;
 	
@@ -25,16 +29,19 @@ public class LoginBean {
 		System.out.println(sql);
 		Connection dbConn = new PostgreSQLAccess().getConnection();
 		PreparedStatement prep = dbConn.prepareStatement(sql);
-		prep.setString(1, this.email);
+		prep.setString(1, this.userid);
 		prep.setString(2, this.password);
 		ResultSet dbRes = prep.executeQuery();
 		return dbRes.next();
 	}
-	public String getEmail() {
-		return email;
+	
+	
+	
+	public String getUserid() {
+		return userid;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
 	public String getPassword() {
 		return password;

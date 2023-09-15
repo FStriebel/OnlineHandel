@@ -1,6 +1,7 @@
 package de.hwg_lu.bwi.jdbc;
 
 import java.sql.SQLException;
+import org.postgresql.*;
 
 public class PostgreSQLAccess extends JDBCAccess {
 
@@ -15,7 +16,7 @@ public class PostgreSQLAccess extends JDBCAccess {
 //		dbURL        = "jdbc:postgresql://localhost:5432/BWUEBDB";
 //		dbUser       = "postgres";
 //		dbPassword   = "pgadmin";
-		dbSchema     = "bwi420_635315"; // hier Matrikelnummer eintragen
+		dbSchema     = "bwi520_635315"; // hier Matrikelnummer eintragen
 		
 	}
 	public void setSchema() throws NoConnectionException {
